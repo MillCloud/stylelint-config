@@ -1,25 +1,17 @@
 # @modyqyw/stylelint-config
 
-A Stylelint shareable config for css, less and scss. Also support miniprograms.
+A Stylelint shareable config for CSS/LESS/SCSS. Supports miniprograms.
 
 ## Usage
 
-- Install the config.
-
 ```sh
 npm i -D stylelint@~13.7.0 @modyqyw/stylelint-config@~1.0.0
+# or
+# yarn add -D stylelint@~13.7.0 @modyqyw/stylelint-config@~1.0.0
 ```
-
-For yarn, run scripts below.
-
-```sh
-yarn add -D stylelint@~13.7.0 @modyqyw/stylelint-config@~1.0.0
-```
-
-- Set up.
 
 ```js
-// stylelint.config.js
+// ${PROJECT_DIR}/stylelint.config.js
 module.exports = {
   extends: ["@modyqyw/stylelint-config/css"], // for css
   // extends: ["@modyqyw/stylelint-config/less"], // for less
@@ -39,7 +31,7 @@ module.exports = {
   "less.validate": false,
   "scss.validate": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll.stylelint": true
   },
   "files.associations": {
     "*.wxml": "html",
@@ -64,9 +56,7 @@ module.exports = {
 
 - [@modyqyw/prettier-config](https://github.com/MillCloud/prettier-config#readme)
 - [@modyqyw/eslint-config](https://github.com/MillCloud/eslint-config#readme)
-- [@modyqyw/eslint-config-react](https://github.com/MillCloud/eslint-config-react#readme)
-- [@modyqyw/eslint-config-vue](https://github.com/MillCloud/eslint-config-vue#readme)
-- [@modyqyw/eslint-config-vue-ts](https://github.com/MillCloud/eslint-config-vue-ts#readme)
+- [@modyqyw/stylelint-config](https://github.com/MillCloud/stylelint-config#readme)
 
 ## License
 

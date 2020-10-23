@@ -1,7 +1,7 @@
 {
   "name": "@modyqyw/stylelint-config",
   "version": "1.0.1",
-  "description": "A Stylelint shareable config for css, less and scss. Also support miniprograms.",
+  "description": "A Stylelint shareable config for CSS/LESS/SCSS. Supports miniprograms.",
   "keywords": [
     "stylelint",
     "config",
@@ -15,23 +15,41 @@
     "url": "https://github.com/MillCloud/stylelint-config/issues"
   },
   "license": "MIT",
-  "author": "ModyQyW <wurui7@mail3.sysu.edu.cn>",
+  "author": {
+    "name": "ModyQyW",
+    "email": "wurui7@mail3.sysu.edu.cn",
+    "url": "https://modyqyw.github.io"
+  },
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:MillCloud/stylelint-config.git"
+  },
+  "scripts": {
+    "check": "ncu",
+    "commit": "git-cz && git push",
+    "lint": "eslint . --ext .js --fix",
+    "release": "np --no-tests --no-release-draft"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "dependencies": {
     "stylelint-config-twbs-bootstrap": "~2.1.0"
   },
   "devDependencies": {
     "@modyqyw/prettier-config": "~1.1.0",
-    "babel-eslint": "~10.1.0",
+    "commitizen": "~4.2.0",
     "eslint": "~7.11.0",
+    "eslint-config-prettier": "~6.14.0",
+    "eslint-plugin-prettier": "~3.1.0",
+    "husky": "~4.3.0",
+    "lint-staged": "~10.4.0",
+    "np": "~6.5.0",
+    "npm-check-updates": "~9.1.2",
     "prettier": "~2.1.0"
-  },
-  "peerDependencies": {
-    "stylelint": "~13.7.0"
   },
   "engines": {
     "node": ">=10",
@@ -39,5 +57,15 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ]
   }
 }
