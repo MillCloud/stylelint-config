@@ -29,11 +29,6 @@
     "check": "ncu",
     "release": "np --no-tests --no-release-draft"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "dependencies": {
     "stylelint-config-twbs-bootstrap": "~2.1.0"
   },
