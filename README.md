@@ -1,6 +1,6 @@
 # @modyqyw/stylelint-config
 
-A Stylelint shareable config for CSS/LESS/SCSS. Supports miniprograms.
+A Stylelint shareable config for CSS/LESS/SCSS. Supports miniprogram.
 
 ## Usage
 
