@@ -2,6 +2,10 @@
 
 A Stylelint shareable config for CSS/LESS/SCSS. Supports miniprogram.
 
+Will be dropped in the future. Try [@modyqyw/fabric](#more-configs).
+
+[Github](https://github.com/MillCloud/stylelint-config#readme) | [Gitee](https://gitee.com/millcloud/stylelint-config#readme)
+
 ## Usage
 
 ```sh
@@ -23,13 +27,12 @@ module.exports = {
 
 - Install plugins.
   - [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+  - [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 - Set up `Settings.json`. Then `F1 => File: Save`.
 
 ```json
 {
   "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": true
   },
@@ -48,15 +51,22 @@ module.exports = {
     "*.wpy": "vue",
     "*.nvue": "vue",
     "*.ux": "vue"
+  },
+  "less.validate": false,
+  "scss.validate": false,
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
   }
 }
 ```
 
 ## More Config
 
-- [@modyqyw/prettier-config](https://github.com/MillCloud/prettier-config#readme)
-- [@modyqyw/eslint-config](https://github.com/MillCloud/eslint-config#readme)
-- [@modyqyw/stylelint-config](https://github.com/MillCloud/stylelint-config#readme)
+- `@modyqyw/prettier-config` - [Github](https://github.com/MillCloud/prettier-config#readme) [Gitee](https://gitee.com/millcloud/prettier-config#readme)
+- `@modyqyw/eslint-config` - [Github](https://github.com/MillCloud/eslint-config#readme) [Gitee](https://gitee.com/millcloud/eslint-config#readme)
+- `@modyqyw/stylelint-config` - [Github](https://github.com/MillCloud/stylelint-config#readme) [Gitee](https://gitee.com/millcloud/stylelint-config#readme)
+
+`@modyqyw/eslint-config` and `@modyqyw/stylelint-config` do not use any `Prettier` config and plugin, while `@modyqyw/fabric` does.
 
 ## License
 
