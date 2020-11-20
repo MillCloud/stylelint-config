@@ -1,17 +1,15 @@
+**DEPRECATED. Check [@modyqyw/fabric](https://github.com/MillCloud/fabric).**
+
 # @modyqyw/stylelint-config
 
 A Stylelint shareable config for CSS/LESS/SCSS. Supports miniprogram.
 
-Will be dropped in the future. Try [@modyqyw/fabric](#more-configs).
-
-[Github](https://github.com/MillCloud/stylelint-config#readme) | [Gitee](https://gitee.com/millcloud/stylelint-config#readme)
-
 ## Usage
 
 ```sh
-npm i -D stylelint@~13.7.0 @modyqyw/stylelint-config@~1.0.0
+npm i -D stylelint@~13.8.0 @modyqyw/stylelint-config@~1.0.5
 # or
-# yarn add -D stylelint@~13.7.0 @modyqyw/stylelint-config@~1.0.0
+# yarn add -D stylelint@~13.8.0 @modyqyw/stylelint-config@~1.0.5
 ```
 
 ```js
